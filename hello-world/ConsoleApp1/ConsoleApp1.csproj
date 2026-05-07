@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Delegates/" />
+    <Folder Include="DependencyInjectionApp/" />
+    <Folder Include="EventsApp/" />
+    <Folder Include="InheritanceApp/" />
+    <Folder Include="InterfacesApp/" />
+    <Folder Include="ListsApp/" />
+    <Folder Include="RegularExpressions/" />
+    <Folder Include="StructsApp/" />
+  </ItemGroup>
+
+</Project>
