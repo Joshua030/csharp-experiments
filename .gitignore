@@ -14,6 +14,10 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# Publish output
+[Pp]ublish/
+PublishProfiles/
+
 # Visual Studio cache/options
 .vs/
 *.suo
@@ -21,6 +25,10 @@ bld/
 *.userosscache
 *.sln.docstates
 *.userprefs
+*.pidb
+*.sdf
+*.opendb
+*.opensdf
 
 # Build outputs
 *.dll
@@ -28,10 +36,12 @@ bld/
 *.pdb
 *.cache
 *.tlog
+*.binlog
 
 # Rider / ReSharper
 .idea/
 *.DotSettings.user
+*.rsuser
 _ReSharper*/
 
 # Visual Studio Code
@@ -49,11 +59,29 @@ _ReSharper*/
 !**/[Pp]ackages/build/
 *.nuget.props
 *.nuget.targets
+packages.lock.json
 
-# .NET Core
+# .NET Core / SDK
 project.lock.json
 project.fragment.lock.json
 artifacts/
+*.runtimeconfig.json
+*.deps.json
+launchSettings.json
+
+# Auto-generated files
+*.AssemblyInfo.cs
+*.GlobalUsings.g.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.sourcelink.json
+*.AssemblyInfoInputs.cache
+*.assets.cache
+*.genruntimeconfig.cache
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute.txt
+*.csproj.AssemblyReference.cache
+*.NETCoreApp,Version=*.AssemblyAttributes.cs
+*.Up2Date
 
 # Test results
 [Tt]est[Rr]esult*/
