@@ -66,4 +66,31 @@ public class UniversityManager
         universityStudents.ToList().ForEach(student => student.Print());
     }
 
+    // Possible type of new collection use if we need in more than one place
+    //  public record StudentUniversity(string StudentName, string UniversityName);
+    public void StudentAndUniversityNameCollection()
+    {
+
+
+        // var newCollection = students.
+        // Join(universities,
+        // student => student.UniversityId,
+        // university => university.Id,
+        // (student, university) => new { student, university })
+        // .OrderBy(x => x.student.Name).
+        // Select(x => new { StudentName = x.student.Name, UniversityName = x.university.Name });
+
+        //Short way
+        var newCollection = students
+       .Join(
+           universities,
+           student => student.UniversityId,
+           university => university.Id,
+           (student, university) => new { StudentName = student.Name, UniversityName = university.Name })
+       .OrderBy(x => x.StudentName);
+
+        Console.WriteLine("New Collection: ");
+        newCollection.ToList().ForEach(element => Console.WriteLine("Student {0} from University {1}", element.StudentName, element.UniversityName));
+
+    }
 }

@@ -45,11 +45,11 @@ PublishProfiles/
 _ReSharper*/
 
 # Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
 *.code-workspace
 
 # NuGet
@@ -82,6 +82,7 @@ launchSettings.json
 *.csproj.AssemblyReference.cache
 *.NETCoreApp,Version=*.AssemblyAttributes.cs
 *.Up2Date
+*.lscache
 
 # Test results
 [Tt]est[Rr]esult*/
@@ -108,3 +109,8 @@ Desktop.ini
 .env
 *.env
 !.env.example
+
+# App configuration with secrets
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
