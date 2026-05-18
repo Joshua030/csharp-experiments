@@ -14,6 +14,11 @@ DatabaseConnection.InsertUniversities();
 DatabaseConnection.GetUniversities();
 DatabaseConnection.InsertStudents();
 DatabaseConnection.GetStudents();
+DatabaseConnection.InsertLectures();
+DatabaseConnection.GetLectures();
+DatabaseConnection.InsertStudentLectureAssociations();
+DatabaseConnection.GetStudentsWithLectureAndUniversity();
+DatabaseConnection.GetAllStudentsFromYale();
 
 /* string? userInput = Console.ReadLine();
 if (int.TryParse(userInput, out int parsedNumber))
